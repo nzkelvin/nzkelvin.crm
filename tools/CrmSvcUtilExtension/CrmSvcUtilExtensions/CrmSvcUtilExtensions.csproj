@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AA408DE-1249-43C6-8104-85A84A4B7B4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrmSvcUtilExtensions</RootNamespace>
+    <AssemblyName>CrmSvcUtilExtensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrmSvcUtil, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\coretools\CrmSvcUtil.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\coretools\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\coretools\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicFilteringService.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\FilterDataHelper.cs" />
+    <Compile Include="OptionSetsCodeCustomizationService.cs" />
+    <Compile Include="Config\CrmSvcUtilFiltersConfig.cs" />
+    <Compile Include="Config\EntitiesFilter.cs" />
+    <Compile Include="Config\OptionSetsFilter.cs" />
+    <Compile Include="OptionSetsNamingService.cs" />
+    <Compile Include="OptionSetsFilterService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\coretools\AntiXSSLibrary.dll" />
+    <Content Include="bin\coretools\CrmSvcUtil.exe" />
+    <Content Include="bin\coretools\CrmSvcUtil.xml" />
+    <Content Include="bin\coretools\CrmSvcUtilExtensions.Config.dll" />
+    <Content Include="bin\coretools\CrmSvcUtilExtensions.Config.pdb" />
+    <Content Include="bin\coretools\CrmSvcUtilExtensions.dll" />
+    <Content Include="bin\coretools\CrmSvcUtilExtensions.pdb" />
+    <Content Include="bin\coretools\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="bin\coretools\Microsoft.IdentityModel.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Client.CodeGeneration.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Client.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Portal.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="bin\coretools\Other Redistributable.txt" />
+    <Content Include="bin\coretools\SolutionPackager.exe" />
+    <Content Include="bin\coretools\WebsiteCopy.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\coretools\CrmSvcUtil.exe.config" />
+    <None Include="bin\coretools\GenerateEarlyBoundEntities.bat" />
+    <None Include="bin\coretools\LicenseTerms.docx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrmSvcUtilExtensions.Config\CrmSvcUtilExtensions.Config.csproj">
+      <Project>{2c8a38ff-53f1-48e0-ad5c-7194b1274222}</Project>
+      <Name>CrmSvcUtilExtensions.Config</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetDir)$(ProjectName).???" "$(ProjectDir)bin\coretools\$(ProjectName).???"
+xcopy /Y "$(TargetDir)CrmSvcUtilExtensions.Config.???" "$(ProjectDir)bin\coretools\CrmSvcUtilExtensions.Config.???"</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
