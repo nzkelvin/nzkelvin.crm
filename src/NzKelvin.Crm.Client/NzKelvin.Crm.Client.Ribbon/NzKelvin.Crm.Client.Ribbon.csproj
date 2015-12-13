@@ -44,6 +44,9 @@
     <Content Include="AccountAppointmentAction.js" />
     <Content Include="AccountAppointmentScheduler.html" />
     <Content Include="AccountAppointmentScheduler.js" />
+    <Content Include="images\uiicons_777620_256x240.png" />
+    <Content Include="images\uiicons_cc0000_256x240.png" />
+    <Content Include="images\uiicons_ffffff_256x240.png" />
     <Content Include="images\uiicons_555555_256x240.png" />
     <Content Include="images\uiicons_444444_256x240.png" />
     <Content Include="images\uiicons_777777_256x240.png" />
