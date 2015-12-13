@@ -28,8 +28,6 @@
 
     console.log(jqueryuijsUrl); //XXX
     $.getScript(jqueryuijsUrl, function () { //??? Why has to getScript
-        //$("#appointment-scheduler").show();
-
         $("#appointment-scheduler").dialog({
             height: 260,
             modal: true
