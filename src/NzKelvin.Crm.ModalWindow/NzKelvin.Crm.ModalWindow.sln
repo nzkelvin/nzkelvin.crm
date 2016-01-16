@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmPackage", "CrmVSSolution1\CrmPackage\CrmPackage.csproj", "{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}"
+EndProject
+Global
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8139FAB4-1EAC-4E83-9EDB-97BC7925127E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
