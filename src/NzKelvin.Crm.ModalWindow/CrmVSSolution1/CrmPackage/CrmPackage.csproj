@@ -55,6 +55,11 @@
       <UniqueName>ks_jquery1.11.3.min</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\require.js">
+      <DisplayName>require</DisplayName>
+      <UniqueName>ks_require</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
     <CRMWebResource Include="WebResources\Script %28JScript%29\SDK.MetaData.js">
       <DisplayName>SDK.MetaData</DisplayName>
       <UniqueName>ks_SDK.MetaData</UniqueName>
