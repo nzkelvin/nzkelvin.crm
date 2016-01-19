@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="WebResources\Script %28JScript%29\" />
+    <Folder Include="WebResources\Script %28JScript%29\common" />
+    <Folder Include="WebResources\Script %28JScript%29\common\jqueryui" />
+    <Folder Include="WebResources\Script %28JScript%29\common\jqueryui\images" />
     <Folder Include="WebResources\Script %28JScript%29\modal" />
     <RegisterPlugin Include="RegisterFile.crmregister">
       <DisplayName>RegisterFile</DisplayName>
@@ -45,34 +48,119 @@
     <Folder Include="WebResources" />
   </ItemGroup>
   <ItemGroup>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\jquery.validate.min.js">
-      <DisplayName>jquery.validate.min</DisplayName>
-      <UniqueName>ks_jquery.validate.min</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\jquery.validate.min.js">
+      <DisplayName>jquery.validate.min.js</DisplayName>
+      <UniqueName>ks_common/jquery.validate.min.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\jquery1.11.3.min.js">
-      <DisplayName>jquery1.11.3.min</DisplayName>
-      <UniqueName>ks_jquery1.11.3.min</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\jquery1.11.3.min.js">
+      <DisplayName>jquery1.11.3.min.js</DisplayName>
+      <UniqueName>ks_common/jquery1.11.3.min.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\require.js">
-      <DisplayName>require</DisplayName>
-      <UniqueName>ks_require</UniqueName>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_glass_55_fbf9ee_1x400.png">
+      <DisplayName>ui_bg_glass_55_fbf9ee_1x400.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_glass_55_fbf9ee_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_glass_65_ffffff_1x400.png">
+      <DisplayName>ui_bg_glass_65_ffffff_1x400.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_glass_65_ffffff_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_glass_75_dadada_1x400.png">
+      <DisplayName>ui_bg_glass_75_dadada_1x400.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_glass_75_dadada_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_glass_75_e6e6e6_1x400.png">
+      <DisplayName>ui_bg_glass_75_e6e6e6_1x400.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_glass_75_e6e6e6_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_glass_95_fef1ec_1x400.png">
+      <DisplayName>ui_bg_glass_95_fef1ec_1x400.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_glass_95_fef1ec_1x400.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_bg_highlight_soft_75_cccccc_1x100.png">
+      <DisplayName>ui_bg_highlight_soft_75_cccccc_1x100.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_bg_highlight_soft_75_cccccc_1x100.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_icons_222222_256x240.png">
+      <DisplayName>ui_icons_222222_256x240.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_icons_222222_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_icons_2e83ff_256x240.png">
+      <DisplayName>ui_icons_2e83ff_256x240.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_icons_2e83ff_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_icons_454545_256x240.png">
+      <DisplayName>ui_icons_454545_256x240.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_icons_454545_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_icons_888888_256x240.png">
+      <DisplayName>ui_icons_888888_256x240.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_icons_888888_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\images\ui_icons_cd0a0a_256x240.png">
+      <DisplayName>ui_icons_cd0a0a_256x240.png</DisplayName>
+      <UniqueName>ks_common/jqueryui/images/ui_icons_cd0a0a_256x240.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <None Include="WebResources\Script %28JScript%29\common\jqueryui\index.html">
+      <DisplayName>index</DisplayName>
+      <UniqueName>ks_common/jqueryui/index.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </None>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\jquery_ui.css">
+      <DisplayName>jquery_ui.css</DisplayName>
+      <UniqueName>ks_common/jqueryui/jquery_ui.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\common\jqueryui\jquery_ui.js">
+      <DisplayName>jquery_ui.js</DisplayName>
+      <UniqueName>ks_common/jqueryui/jquery_ui.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\SDK.MetaData.js">
-      <DisplayName>SDK.MetaData</DisplayName>
-      <UniqueName>ks_SDK.MetaData</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\require.js">
+      <DisplayName>require.js</DisplayName>
+      <UniqueName>ks_common/require.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\SDK.REST.js">
-      <DisplayName>SDK.REST</DisplayName>
-      <UniqueName>ks_SDK.REST</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\SDK.MetaData.js">
+      <DisplayName>SDK.MetaData.js</DisplayName>
+      <UniqueName>ks_common/SDK.MetaData.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\XrmServiceToolkit.min.js">
-      <DisplayName>XrmServiceToolkit.min</DisplayName>
-      <UniqueName>ks_XrmServiceToolkit.min</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\SDK.REST.js">
+      <DisplayName>SDK.REST.js</DisplayName>
+      <UniqueName>ks_common/SDK.REST.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\common\XrmServiceToolkit.min.js">
+      <DisplayName>XrmServiceToolkit.min.js</DisplayName>
+      <UniqueName>ks_common/XrmServiceToolkit.min.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\NzKelvin.account.SchedulerIcon16.png">
+      <DisplayName>NzKelvin.account.SchedulerIcon16.png</DisplayName>
+      <UniqueName>ks_NzKelvin.account.SchedulerIcon16.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\NzKelvin.account.SchedulerIcon32.png">
+      <DisplayName>NzKelvin.account.SchedulerIcon32.png</DisplayName>
+      <UniqueName>ks_NzKelvin.account.SchedulerIcon32.png</UniqueName>
+      <WebResourceType>PNG</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\NzKelvin.account.Scheduler.js">
+      <DisplayName>NzKelvin.account.Scheduler.js</DisplayName>
+      <UniqueName>ks_NzKelvin.account.Scheduler.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
   </ItemGroup>
