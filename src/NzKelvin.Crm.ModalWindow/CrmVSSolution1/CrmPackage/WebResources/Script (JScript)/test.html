@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery UI Dialog - Default functionality</title>
+  <style>
+      #dialogFrame {
+          width: 100%;
+          height: 100%;
+      }
+  </style>
+  <link rel="stylesheet" href="./ks_common/jqueryui/jquery_ui.css">
+  <script src="./ks_common/jquery1.11.3.min.js"></script>
+  <script src="./ks_common/jqueryui/jquery_ui.js"></script>
+  <script>
+      $(function () {
+          $("#dialog").dialog({
+              height: 300,
+              width: 350
+          });
+      });
+  </script>
+</head>
+<body>
+ 
+<div id="dialog" title="Scheduler">
+  <iframe id="dialogFrame" seamless="seamless" frameborder="0" src="ks_NzKelvin.account.Scheduler.html"></iframe>
+</div>
+ 
+ 
+</body>
+</html>

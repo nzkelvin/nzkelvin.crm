@@ -38,7 +38,7 @@
     <Folder Include="WebResources\Script %28JScript%29\" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common\jqueryui" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common\jqueryui\images" />
-    <Folder Include="WebResources\Script %28JScript%29\modal" />
+    <Folder Include="WebResources\Script %28JScript%29\ks_modal" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common" />
     <RegisterPlugin Include="RegisterFile.crmregister">
       <DisplayName>RegisterFile</DisplayName>
@@ -113,11 +113,11 @@
       <UniqueName>ks_common/jqueryui/images/ui_icons_cd0a0a_256x240.png</UniqueName>
       <WebResourceType>PNG</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\index.html">
+    <None Include="WebResources\Script %28JScript%29\ks_common\jqueryui\index.html">
       <DisplayName>index.html</DisplayName>
       <UniqueName>ks_common/jqueryui/index.html</UniqueName>
       <WebResourceType>WebPage</WebResourceType>
-    </CRMWebResource>
+    </None>
     <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\jquery_ui.css">
       <DisplayName>jquery_ui.css</DisplayName>
       <UniqueName>ks_common/jqueryui/jquery_ui.css</UniqueName>
@@ -147,6 +147,16 @@
       <DisplayName>XrmServiceToolkit.min.js</DisplayName>
       <UniqueName>ks_common/XrmServiceToolkit.min.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <None Include="WebResources\Script %28JScript%29\test.html">
+      <DisplayName>test</DisplayName>
+      <UniqueName>ks_test</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </None>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_NzKelvin.account.Scheduler.html">
+      <DisplayName>ks_NzKelvin.account.Scheduler</DisplayName>
+      <UniqueName>ks_ks_NzKelvin.account.Scheduler</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
     </CRMWebResource>
     <CRMWebResource Include="WebResources\Script (JScript)\ks_NzKelvin.account.SchedulerIcon16.png">
       <DisplayName>NzKelvin.account.SchedulerIcon16.png</DisplayName>
