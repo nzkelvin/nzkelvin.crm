@@ -13,6 +13,7 @@
         dialogContentSrc = webResourcesUrl + dialogContentSrc;
         jqueryuiCssSrc = webResourcesUrl + jqueryuiCssSrc;
     }
+    var zIndex = 1000;
     var modalDialog = true;
 
     var dlg = new ks.Dialog(
@@ -22,6 +23,7 @@
         dialogWidth,
         dialogContentSrc,
         jqueryuiCssSrc,
+        zIndex,
         modalDialog
     );
 

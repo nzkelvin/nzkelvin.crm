@@ -2,13 +2,14 @@
     ks = { __namespace: true };
 }
 
-ks.Dialog = function (dialogId, dialogTitle, dialogHeight, dialogWidth, dialogContentSrc, jqueryuiCssSrc, modalDialog) {
+ks.Dialog = function (dialogId, dialogTitle, dialogHeight, dialogWidth, dialogContentSrc, jqueryuiCssSrc, zIndex, modalDialog) {
     this.dialogId = dialogId;
     this.dialogTitle = dialogTitle;
     this.dialogHeight = dialogHeight;
     this.dialogWidth = dialogWidth;
     this.dialogContentSrc = dialogContentSrc;
     this.jqueryuiCssSrc = jqueryuiCssSrc;
+    this.zIndex = zIndex;
     this.modalDialog = typeof (modalDialog) === 'boolean' ? modalDialog : true;
 }
 
@@ -47,8 +48,13 @@ ks.Dialog.prototype.init = function () {
             rel: 'stylesheet',
             href: this.jqueryuiCssSrc
         });
-        
         jqueryUiCss.appendTo(head);
+
+        if (typeof (this.zIndex) !== typeof (undefined) && this.zIndex) {
+            $("<style type='text/css'> .ui-front { z-index: " + this.zIndex
+                + " !important; } .ui-dialog { z-index: " + (this.zIndex + 1) + " !important ;} </style>")
+                .appendTo(head);
+        }
     } else {
         jqueryUiCss = jqueryUiCssJqueryResults[0];
     }
