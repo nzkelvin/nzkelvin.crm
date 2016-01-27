@@ -32,8 +32,18 @@ ks.Dialog.prototype.open = function () {
 }
 
 ks.Dialog.prototype.init = function () {
-    // load jquery ui
-    //var jqueryUiCssSource = this.jqueryuiCssSrc;//'./ks_common/jqueryui/jquery_ui.css';
+    var body = $('body');
+    var head = $('head');
+    if (window.parent && window.parent.document) {
+        body = window.parent.document.body;
+        head = window.parent.document.head;
+        //if (window.parent.parent && window.parent.parent.document) {
+        //    body = window.parent.parent.document.body;
+        //    head = window.parent.parent.document.head;
+        //}
+    }
+
+    // load jquery ui css
     var jqueryUiCssJqueryResults = $('link[href="' + this.jqueryuiCssSrc + '"]');
     var jqueryUiCss = null;
     if (!jqueryUiCssJqueryResults.length) {
@@ -42,11 +52,12 @@ ks.Dialog.prototype.init = function () {
             href: this.jqueryuiCssSrc
         });
         
-        jqueryUiCss.appendTo('head');
+        jqueryUiCss.appendTo(head);
     } else {
         jqueryUiCss = jqueryUiCssJqueryResults[0];
     }
 
+    // dialog
     var dialog = $('#' + this.dialogId);
     if (!dialog.length) {
         dialog = $('<div>', {
@@ -54,7 +65,7 @@ ks.Dialog.prototype.init = function () {
             title: this.dialogTitle
         });
     }
-    dialog.appendTo('body');
+    dialog.appendTo(body);
     dialog.dialog({
         autoOpen: false,
         height: this.dialogHeight,
