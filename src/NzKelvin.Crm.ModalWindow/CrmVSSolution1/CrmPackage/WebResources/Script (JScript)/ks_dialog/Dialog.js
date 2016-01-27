@@ -37,10 +37,6 @@ ks.Dialog.prototype.init = function () {
     if (window.parent && window.parent.document) {
         body = window.parent.document.body;
         head = window.parent.document.head;
-        //if (window.parent.parent && window.parent.parent.document) {
-        //    body = window.parent.parent.document.body;
-        //    head = window.parent.parent.document.head;
-        //}
     }
 
     // load jquery ui css
