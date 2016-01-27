@@ -4,30 +4,44 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>jQuery UI Dialog - Default functionality</title>
-  <style>
-      #dialogFrame {
-          width: 100%;
-          height: 100%;
-      }
-  </style>
-  <link rel="stylesheet" href="./ks_common/jqueryui/jquery_ui.css">
+  <!--<link rel="stylesheet" href="./ks_common/jqueryui/jquery_ui.css">-->
   <script src="./ks_common/jquery1.11.3.min.js"></script>
   <script src="./ks_common/jqueryui/jquery_ui.js"></script>
+  <script src="./ks_dialog/Dialog.js"></script>
   <script>
       $(function () {
-          $("#dialog").dialog({
-              height: 300,
-              width: 350
+          $("#popButton").on("click", function () {
+              var dialogId = 'dialog';
+              var dialogTitle = 'Scheduler';
+              var dialogHeight = 300;
+              var dialogWidth = 350;
+              var dialogContentSrc = 'ks_NzKelvin.account.Scheduler.html';
+              var jqueryuiCssSrc = 'ks_common/jqueryui/jquery_ui.css';
+              if (typeof (Xrm) !== typeof (undefined) && Xrm
+                  && typeof (Xrm.Page) !== typeof (undefined) && Xrm.Page
+                  && typeof (Xrm.Page.context) !== typeof (undefined) && Xrm.Page.context) {
+                  var webResourcesUrl = Xrm.Page.context.getClientUrl() + '/WebResources/';
+                  dialogContentSrc = webResourcesUrl + dialogContentSrc;
+                  jqueryuiCssSrc = webResourcesUrl + jqueryuiCssSrc;
+              }
+              var modalDialog = true;
+
+              var dlg = new ks.Dialog(
+                  dialogId,
+                  dialogTitle,
+                  dialogHeight,
+                  dialogWidth,
+                  dialogContentSrc,
+                  jqueryuiCssSrc,
+                  modalDialog
+              );
+
+              dlg.open();
           });
       });
   </script>
 </head>
 <body>
- 
-<div id="dialog" title="Scheduler">
-  <iframe id="dialogFrame" seamless="seamless" frameborder="0" src="ks_NzKelvin.account.Scheduler.html"></iframe>
-</div>
- 
- 
+<button type="button" id="popButton">Pop</button> 
 </body>
 </html>

@@ -38,7 +38,7 @@
     <Folder Include="WebResources\Script %28JScript%29\" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common\jqueryui" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common\jqueryui\images" />
-    <Folder Include="WebResources\Script %28JScript%29\ks_modal" />
+    <Folder Include="WebResources\Script %28JScript%29\ks_dialog" />
     <Folder Include="WebResources\Script %28JScript%29\ks_common" />
     <RegisterPlugin Include="RegisterFile.crmregister">
       <DisplayName>RegisterFile</DisplayName>
@@ -153,9 +153,19 @@
       <UniqueName>ks_test</UniqueName>
       <WebResourceType>WebPage</WebResourceType>
     </None>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_dialog\Dialog.js">
+      <DisplayName>Dialog.js</DisplayName>
+      <UniqueName>ks_dialog/Dialog.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_NzKelvin.account.ribbon.js">
+      <DisplayName>NzKelvin.account.ribbon,js</DisplayName>
+      <UniqueName>ks_NzKelvin.account.ribbon</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
     <CRMWebResource Include="WebResources\Script %28JScript%29\ks_NzKelvin.account.Scheduler.html">
-      <DisplayName>ks_NzKelvin.account.Scheduler</DisplayName>
-      <UniqueName>ks_ks_NzKelvin.account.Scheduler</UniqueName>
+      <DisplayName>NzKelvin.account.Scheduler.html</DisplayName>
+      <UniqueName>ks_NzKelvin.account.Scheduler.html</UniqueName>
       <WebResourceType>WebPage</WebResourceType>
     </CRMWebResource>
     <CRMWebResource Include="WebResources\Script (JScript)\ks_NzKelvin.account.SchedulerIcon16.png">
