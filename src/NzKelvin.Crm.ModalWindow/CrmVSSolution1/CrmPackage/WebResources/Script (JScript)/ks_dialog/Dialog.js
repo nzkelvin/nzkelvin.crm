@@ -13,19 +13,33 @@ ks.Dialog = function (dialogId, dialogTitle, dialogHeight, dialogWidth, dialogCo
 }
 
 ks.Dialog.prototype.open = function () {
-    this.init();
-    this.dialog.dialog('open');
+    var cssReady = false;
+    if ($('link[href="' + this.jqueryuiCssSrc + '"]').length > 0) {
+        cssReady = true;
+    }
+
+    var jqueryUiCss = this.init();
+
+    if (cssReady) {
+        this.dialog.dialog('open');
+    }
+    else {
+        var that = this;
+        jqueryUiCss.load(function () {
+            that.dialog.dialog('open');
+        })
+    }
 }
 
 ks.Dialog.prototype.init = function () {
     // load jquery ui
-    var jqueryUiCssSource = this.jqueryuiCssSrc;//'./ks_common/jqueryui/jquery_ui.css';
-    var jqueryUiCssJqueryResults = $('link[href="' + jqueryUiCssSource + '"]');
+    //var jqueryUiCssSource = this.jqueryuiCssSrc;//'./ks_common/jqueryui/jquery_ui.css';
+    var jqueryUiCssJqueryResults = $('link[href="' + this.jqueryuiCssSrc + '"]');
     var jqueryUiCss = null;
     if (!jqueryUiCssJqueryResults.length) {
         var jqueryUiCss = $('<link>', {
             rel: 'stylesheet',
-            href: jqueryUiCssSource
+            href: this.jqueryuiCssSrc
         });
         
         jqueryUiCss.appendTo('head');
@@ -65,7 +79,5 @@ ks.Dialog.prototype.init = function () {
 
     this.dialog = dialog;
         
-    
-
-
+    return jqueryUiCss;
 }
