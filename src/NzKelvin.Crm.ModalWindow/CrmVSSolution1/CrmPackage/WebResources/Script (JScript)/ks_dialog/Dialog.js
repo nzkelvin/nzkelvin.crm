@@ -1,6 +1,7 @@
 ﻿/*todo:
 * parameter fix - simpler - more configurable
 * CSS fix - looks more like CRM
+* performance - use require.js - not to load everything at start
 * Test with Mobile
 */
 
