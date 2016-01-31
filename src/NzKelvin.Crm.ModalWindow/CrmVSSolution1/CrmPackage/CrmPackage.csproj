@@ -118,14 +118,14 @@
       <UniqueName>ks_common/jqueryui/index.html</UniqueName>
       <WebResourceType>WebPage</WebResourceType>
     </None>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\jquery_ui.css">
-      <DisplayName>jquery_ui.css</DisplayName>
-      <UniqueName>ks_common/jqueryui/jquery_ui.css</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\jquery_ui.min.css">
+      <DisplayName>jquery_ui.min.css</DisplayName>
+      <UniqueName>ks_common/jqueryui/jquery_ui.min.css</UniqueName>
       <WebResourceType>CascadingStylesheet</WebResourceType>
     </CRMWebResource>
-    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\jquery_ui.js">
-      <DisplayName>jquery_ui.js</DisplayName>
-      <UniqueName>ks_common/jqueryui/jquery_ui.js</UniqueName>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\jqueryui\jquery_ui.min.js">
+      <DisplayName>jquery_ui.min.js</DisplayName>
+      <UniqueName>ks_common/jqueryui/jquery_ui.min.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
     <CRMWebResource Include="WebResources\Script %28JScript%29\ks_common\require.js">
@@ -160,7 +160,7 @@
     </CRMWebResource>
     <CRMWebResource Include="WebResources\Script %28JScript%29\ks_NzKelvin.account.ribbon.js">
       <DisplayName>NzKelvin.account.ribbon,js</DisplayName>
-      <UniqueName>ks_NzKelvin.account.ribbon</UniqueName>
+      <UniqueName>ks_NzKelvin.account.ribbon.js</UniqueName>
       <WebResourceType>Script</WebResourceType>
     </CRMWebResource>
     <CRMWebResource Include="WebResources\Script %28JScript%29\ks_NzKelvin.account.Scheduler.html">

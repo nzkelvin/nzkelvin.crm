@@ -5,7 +5,7 @@
     var dialogWidth = 350;
     debugger;
     var dialogContentSrc = 'ks_NzKelvin.account.Scheduler.html';
-    var jqueryuiCssSrc = 'ks_common/jqueryui/jquery_ui.css';
+    var jqueryuiCssSrc = 'ks_common/jqueryui/jquery_ui.min.css';
     if (typeof (Xrm) !== typeof (undefined) && Xrm
         && typeof (Xrm.Page) !== typeof (undefined) && Xrm.Page
         && typeof (Xrm.Page.context) !== typeof (undefined) && Xrm.Page.context) {
