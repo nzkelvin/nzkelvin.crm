@@ -1,4 +1,10 @@
-﻿if (typeof (ks) == typeof (undefined) || !ks) {
+﻿/*todo:
+* parameter fix - simpler - more configurable
+* CSS fix - looks more like CRM
+* Test with Mobile
+*/
+
+if (typeof (ks) == typeof (undefined) || !ks) {
     ks = { __namespace: true };
 }
 
